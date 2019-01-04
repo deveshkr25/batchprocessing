@@ -34,7 +34,7 @@ public class HibernateUtil {
 
             registryBuilder.applySettings(settings);
             registry = registryBuilder.build();
-            
+            System.out.println("Test ddb");
             MetadataSources sources = new MetadataSources(registry);
             sources.addAnnotatedClass(Employee.class);
             Metadata metadata = sources.getMetadataBuilder().build();
