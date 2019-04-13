@@ -9,7 +9,7 @@ public class InsertBatchExample {
    public static void main(String[] args) {
       Session session = null;
       Transaction transaction = null;
-      int batchSize = 50;
+      int batchSize = 100;
       try {
          session = HibernateUtil.getSessionFactory().openSession();
          transaction = session.beginTransaction();
